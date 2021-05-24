@@ -1,0 +1,311 @@
+2021-05-24 17:17:39,414 WARN  [SoapUI] Missing folder [C:\Users\KeertiSarode\Desktop\Project\my-app\ext] for external libraries
+2021-05-24 17:17:39,711 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\KeertiSarode\soapui-settings.xml]
+2021-05-24 17:17:43,163 INFO  [WsdlProject] Loaded project from [file:/C:/Users/KeertiSarode/Desktop/Project/my-app/Orders-Database-Testing-soapui-project.xml]
+2021-05-24 17:17:43,879 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Orders Database Testing]
+2021-05-24 17:17:43,880 INFO  [SoapUITestCaseRunner] Running Project [Orders Database Testing], runType = SEQUENTIAL
+2021-05-24 17:17:43,899 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [OrderCreation using DB]
+2021-05-24 17:17:43,923 INFO  [SoapUITestCaseRunner] running step [JDBC Request]
+2021-05-24 17:17:44,390 INFO  [SoapUITestCaseRunner] running step [Set input using JDBC response]
+2021-05-24 17:17:44,850 INFO  [log] <Results>
+    <ResultSet fetchSize="0">
+        <Row rowNumber="1">
+            <CREATEORDER.SKU>SKU00001</CREATEORDER.SKU>
+            <CREATEORDER.PRODUCTID>5</CREATEORDER.PRODUCTID>
+            <CREATEORDER.QTYORDERED>3</CREATEORDER.QTYORDERED>
+            <CREATEORDER.PRICE>100</CREATEORDER.PRICE>
+            <CREATEORDER.METHOD>checkmo</CREATEORDER.METHOD>
+        </Row>
+        <Row rowNumber="2">
+            <CREATEORDER.SKU>SKU00003</CREATEORDER.SKU>
+            <CREATEORDER.PRODUCTID>5</CREATEORDER.PRODUCTID>
+            <CREATEORDER.QTYORDERED>3</CREATEORDER.QTYORDERED>
+            <CREATEORDER.PRICE>100</CREATEORDER.PRICE>
+            <CREATEORDER.METHOD>checkmo</CREATEORDER.METHOD>
+        </Row>
+        <Row rowNumber="3">
+            <CREATEORDER.SKU>SKU00005</CREATEORDER.SKU>
+            <CREATEORDER.PRODUCTID>6</CREATEORDER.PRODUCTID>
+            <CREATEORDER.QTYORDERED>2</CREATEORDER.QTYORDERED>
+            <CREATEORDER.PRICE>100</CREATEORDER.PRICE>
+            <CREATEORDER.METHOD>checkmo</CREATEORDER.METHOD>
+        </Row>
+    </ResultSet>
+</Results>
+
+2021-05-24 17:17:45,190 INFO  [log] 3
+2021-05-24 17:17:45,198 INFO  [log] 3
+2021-05-24 17:17:45,236 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Order Functional Testing]
+2021-05-24 17:17:45,242 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-05-24 17:17:45,251 INFO  [SoapUITestCaseRunner] running step [Create Sales Order]
+2021-05-24 17:17:48,638 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=salesOrderRepositoryV1">
+   <env:Body>
+      <ns1:salesOrderRepositoryV1SaveResponse>
+         <result>
+            <baseGrandTotal/>
+            <baseTotalDue>0</baseTotalDue>
+            <createdAt>2021-05-24 11:47:47</createdAt>
+            <customerEmail>Keerti138.0@gmail.com</customerEmail>
+            <entityId>2505</entityId>
+            <grandTotal/>
+            <incrementId>000002509</incrementId>
+            <protectCode>256ef34c463adc8dae03b1238b4da131</protectCode>
+            <storeName>Main Website
+Main Website Store
+Default Store View</storeName>
+            <totalDue>0</totalDue>
+            <totalItemCount>1</totalItemCount>
+            <updatedAt>2021-05-24 11:47:47</updatedAt>
+            <items>
+               <item>
+                  <baseRowTotal>0</baseRowTotal>
+                  <baseRowTotalInclTax>0</baseRowTotalInclTax>
+                  <createdAt>2021-05-24 11:47:48</createdAt>
+                  <itemId>2301</itemId>
+                  <orderId>2505</orderId>
+                  <originalPrice>100</originalPrice>
+                  <price>100</price>
+                  <productId>5</productId>
+                  <qtyOrdered>3</qtyOrdered>
+                  <rowTotal>0</rowTotal>
+                  <rowTotalInclTax>0</rowTotalInclTax>
+                  <sku>SKU00001</sku>
+                  <updatedAt>2021-05-24 11:47:48</updatedAt>
+               </item>
+            </items>
+            <payment>
+               <accountStatus/>
+               <additionalInformation/>
+               <ccLast4/>
+               <entityId>2505</entityId>
+               <method>checkmo</method>
+               <parentId>2505</parentId>
+            </payment>
+            <statusHistories/>
+         </result>
+      </ns1:salesOrderRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2021-05-24 17:17:48,693 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:17:48,696 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:17:48,697 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-05-24 17:19:06,707 INFO  [log] 1
+2021-05-24 17:19:06,708 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:06,708 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:19:06,708 INFO  [SoapUITestCaseRunner] running step [HoldOrder]
+2021-05-24 17:19:12,785 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:12,786 INFO  [SoapUITestCaseRunner] running step [getOrderStatus]
+2021-05-24 17:19:13,579 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:13,585 INFO  [SoapUITestCaseRunner] running step [unhold order]
+2021-05-24 17:19:14,674 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:14,676 INFO  [SoapUITestCaseRunner] running step [Cancel Order]
+2021-05-24 17:19:15,752 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:16,074 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Order Functional Testing], time taken: 90476ms, status: FINISHED
+2021-05-24 17:19:16,091 INFO  [log] FINISHED
+2021-05-24 17:19:16,091 INFO  [log] 90476
+2021-05-24 17:19:16,093 INFO  [log] 7
+2021-05-24 17:19:16,113 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Order Functional Testing]
+2021-05-24 17:19:16,114 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-05-24 17:19:16,118 INFO  [SoapUITestCaseRunner] running step [Create Sales Order]
+2021-05-24 17:19:17,345 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=salesOrderRepositoryV1">
+   <env:Body>
+      <ns1:salesOrderRepositoryV1SaveResponse>
+         <result>
+            <baseGrandTotal/>
+            <baseTotalDue>0</baseTotalDue>
+            <createdAt>2021-05-24 11:49:16</createdAt>
+            <customerEmail>Keerti448.5@gmail.com</customerEmail>
+            <entityId>2506</entityId>
+            <grandTotal/>
+            <incrementId>000002510</incrementId>
+            <protectCode>d4d990e2e94cc0d97e5c4a03fe7fe82a</protectCode>
+            <storeName>Main Website
+Main Website Store
+Default Store View</storeName>
+            <totalDue>0</totalDue>
+            <totalItemCount>1</totalItemCount>
+            <updatedAt>2021-05-24 11:49:16</updatedAt>
+            <items>
+               <item>
+                  <baseRowTotal>0</baseRowTotal>
+                  <baseRowTotalInclTax>0</baseRowTotalInclTax>
+                  <createdAt>2021-05-24 11:49:16</createdAt>
+                  <itemId>2302</itemId>
+                  <orderId>2506</orderId>
+                  <originalPrice>100</originalPrice>
+                  <price>100</price>
+                  <productId>5</productId>
+                  <qtyOrdered>3</qtyOrdered>
+                  <rowTotal>0</rowTotal>
+                  <rowTotalInclTax>0</rowTotalInclTax>
+                  <sku>SKU00003</sku>
+                  <updatedAt>2021-05-24 11:49:16</updatedAt>
+               </item>
+            </items>
+            <payment>
+               <accountStatus/>
+               <additionalInformation/>
+               <ccLast4/>
+               <entityId>2506</entityId>
+               <method>checkmo</method>
+               <parentId>2506</parentId>
+            </payment>
+            <statusHistories/>
+         </result>
+      </ns1:salesOrderRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2021-05-24 17:19:17,416 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:19:17,417 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:19:17,418 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-05-24 17:20:20,745 INFO  [log] 1
+2021-05-24 17:20:20,747 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:20,751 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:20:20,757 INFO  [SoapUITestCaseRunner] running step [HoldOrder]
+2021-05-24 17:20:21,742 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:21,744 INFO  [SoapUITestCaseRunner] running step [getOrderStatus]
+2021-05-24 17:20:22,611 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:22,615 INFO  [SoapUITestCaseRunner] running step [unhold order]
+2021-05-24 17:20:23,552 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:23,553 INFO  [SoapUITestCaseRunner] running step [Cancel Order]
+2021-05-24 17:20:24,349 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:24,443 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Order Functional Testing], time taken: 68198ms, status: FINISHED
+2021-05-24 17:20:24,444 INFO  [log] FINISHED
+2021-05-24 17:20:24,445 INFO  [log] 68198
+2021-05-24 17:20:24,450 INFO  [log] 7
+2021-05-24 17:20:24,453 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Order Functional Testing]
+2021-05-24 17:20:24,454 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-05-24 17:20:24,455 INFO  [SoapUITestCaseRunner] running step [Create Sales Order]
+2021-05-24 17:20:25,585 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=salesOrderRepositoryV1">
+   <env:Body>
+      <ns1:salesOrderRepositoryV1SaveResponse>
+         <result>
+            <baseGrandTotal/>
+            <baseTotalDue>0</baseTotalDue>
+            <createdAt>2021-05-24 11:50:25</createdAt>
+            <customerEmail>Keerti515.1@gmail.com</customerEmail>
+            <entityId>2507</entityId>
+            <grandTotal/>
+            <incrementId>000002511</incrementId>
+            <protectCode>45b3a848eb8888155ade16847fa923e3</protectCode>
+            <storeName>Main Website
+Main Website Store
+Default Store View</storeName>
+            <totalDue>0</totalDue>
+            <totalItemCount>1</totalItemCount>
+            <updatedAt>2021-05-24 11:50:25</updatedAt>
+            <items>
+               <item>
+                  <baseRowTotal>0</baseRowTotal>
+                  <baseRowTotalInclTax>0</baseRowTotalInclTax>
+                  <createdAt>2021-05-24 11:50:25</createdAt>
+                  <itemId>2303</itemId>
+                  <orderId>2507</orderId>
+                  <originalPrice>100</originalPrice>
+                  <price>100</price>
+                  <productId>6</productId>
+                  <qtyOrdered>2</qtyOrdered>
+                  <rowTotal>0</rowTotal>
+                  <rowTotalInclTax>0</rowTotalInclTax>
+                  <sku>SKU00005</sku>
+                  <updatedAt>2021-05-24 11:50:25</updatedAt>
+               </item>
+            </items>
+            <payment>
+               <accountStatus/>
+               <additionalInformation/>
+               <ccLast4/>
+               <entityId>2507</entityId>
+               <method>checkmo</method>
+               <parentId>2507</parentId>
+            </payment>
+            <statusHistories/>
+         </result>
+      </ns1:salesOrderRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2021-05-24 17:20:25,633 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:20:25,636 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:20:25,638 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-05-24 17:21:38,172 INFO  [log] 1
+2021-05-24 17:21:38,173 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:38,173 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:21:38,174 INFO  [SoapUITestCaseRunner] running step [HoldOrder]
+2021-05-24 17:21:39,510 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:39,511 INFO  [SoapUITestCaseRunner] running step [getOrderStatus]
+2021-05-24 17:21:40,429 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:40,429 INFO  [SoapUITestCaseRunner] running step [unhold order]
+2021-05-24 17:21:41,418 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:41,420 INFO  [SoapUITestCaseRunner] running step [Cancel Order]
+2021-05-24 17:21:42,268 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:42,441 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Order Functional Testing], time taken: 77796ms, status: FINISHED
+2021-05-24 17:21:42,442 INFO  [log] FINISHED
+2021-05-24 17:21:42,443 INFO  [log] 77796
+2021-05-24 17:21:42,443 INFO  [log] 7
+2021-05-24 17:21:42,443 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [OrderCreation using DB], time taken: 238509ms, status: FINISHED
+2021-05-24 17:21:42,445 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Order Functional Testing]
+2021-05-24 17:21:42,447 INFO  [SoapUITestCaseRunner] running step [Properties]
+2021-05-24 17:21:42,447 INFO  [SoapUITestCaseRunner] running step [Create Sales Order]
+2021-05-24 17:21:43,606 INFO  [log] <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ns1="http://soap.upskills.in/soap/default?services=salesOrderRepositoryV1">
+   <env:Body>
+      <ns1:salesOrderRepositoryV1SaveResponse>
+         <result>
+            <baseGrandTotal/>
+            <baseTotalDue>0</baseTotalDue>
+            <createdAt>2021-05-24 11:51:43</createdAt>
+            <customerEmail>Keerti822.3@gmail.com</customerEmail>
+            <entityId>2508</entityId>
+            <grandTotal/>
+            <incrementId>000002512</incrementId>
+            <protectCode>9d39a587d44a2beb116d1362cb560b95</protectCode>
+            <storeName>Main Website
+Main Website Store
+Default Store View</storeName>
+            <totalDue>0</totalDue>
+            <totalItemCount>1</totalItemCount>
+            <updatedAt>2021-05-24 11:51:43</updatedAt>
+            <items>
+               <item>
+                  <baseRowTotal>0</baseRowTotal>
+                  <baseRowTotalInclTax>0</baseRowTotalInclTax>
+                  <createdAt>2021-05-24 11:51:43</createdAt>
+                  <itemId>2304</itemId>
+                  <orderId>2508</orderId>
+                  <originalPrice>100</originalPrice>
+                  <price>100</price>
+                  <productId>6</productId>
+                  <qtyOrdered>2</qtyOrdered>
+                  <rowTotal>0</rowTotal>
+                  <rowTotalInclTax>0</rowTotalInclTax>
+                  <sku>SKU00005</sku>
+                  <updatedAt>2021-05-24 11:51:43</updatedAt>
+               </item>
+            </items>
+            <payment>
+               <accountStatus/>
+               <additionalInformation/>
+               <ccLast4/>
+               <entityId>2508</entityId>
+               <method>checkmo</method>
+               <parentId>2508</parentId>
+            </payment>
+            <statusHistories/>
+         </result>
+      </ns1:salesOrderRepositoryV1SaveResponse>
+   </env:Body>
+</env:Envelope>
+2021-05-24 17:21:43,622 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:21:43,623 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:21:43,624 INFO  [SoapUITestCaseRunner] running step [GetList]
+2021-05-24 17:22:51,104 INFO  [log] 1
+2021-05-24 17:22:51,105 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:22:51,109 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion] has status VALID
+2021-05-24 17:22:51,111 INFO  [SoapUITestCaseRunner] running step [HoldOrder]
+2021-05-24 17:22:52,236 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:22:52,237 INFO  [SoapUITestCaseRunner] running step [getOrderStatus]
+2021-05-24 17:22:53,089 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:22:53,090 INFO  [SoapUITestCaseRunner] running step [unhold order]
+2021-05-24 17:22:54,781 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:22:54,785 INFO  [SoapUITestCaseRunner] running step [Cancel Order]
+2021-05-24 17:22:55,932 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2021-05-24 17:22:56,229 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Order Functional Testing], time taken: 73458ms, status: FINISHED
+2021-05-24 17:22:56,232 INFO  [SoapUITestCaseRunner] Project [Orders Database Testing] finished with status [FINISHED] in 312346ms
